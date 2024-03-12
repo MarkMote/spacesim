@@ -19,7 +19,7 @@ Run development server
 npm run dev
 ```
 
-Admire at your creation:
+Admire at your creation (locally):
 <http://localhost:3000/>
 
 ## Making changes
