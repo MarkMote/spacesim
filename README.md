@@ -28,7 +28,7 @@ Frontend:
 Go to `/src/page`
 
 Backend API:
-Go to `/api/index`
+Go to `/api/index.py`
 
 Spacecraft simulation in python:
-Go to `/api/sc_dynamics`
+Go to `/api/sc_dynamics.py`
