@@ -122,8 +122,8 @@ export default function Home() {
 
       <div ref={mountRef} className='h-[100%] z-20'></div>
       {/* State information display updated to reflect cubeState */}
-      <div className="z-20 absolute flex-col top-0 left-0 m-4 p-4 bg-gradient-to-br from-black/0 to-indigo-500/10 
-      w-[550px] h-[130px] px-5 text-white/70 rounded-lg border-indigo-300/20 border font-mono">
+      <div className="z-20 absolute flex-col top-0 left-0 m-4 p-4 bg-gradient-to-br from-black/0 to-indigo-500/20 
+      w-[550px] h-[130px] px-5 text-white/70 rounded-lg border-indigo-500/50 border font-mono">
         {/* <div>STATE</div> */}
         <div className=' w-full '> Time: {cubeState.time.toFixed(3)} s </div>
         <p>Euler Angles: φ: {(cubeState.eulerAngles.x * 180 / Math.PI).toFixed(2)}°, θ: {(cubeState.eulerAngles.y * 180 / Math.PI).toFixed(2)}°, ψ: {(cubeState.eulerAngles.z * 180 / Math.PI).toFixed(2)}°</p>
