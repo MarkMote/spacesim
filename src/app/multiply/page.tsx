@@ -19,7 +19,8 @@ const AddOneForm = () => {
   };
 
   return (
-    <div className="p-4 bg-[#09090b]">
+    <div className="p-4 ">
+
       <form onSubmit={handleSubmit} className="flex flex-col space-y-2 text-black">
         <label htmlFor="numberInput1" className="text-lg  text-slate-300">Enter the first number:</label>
         <input
@@ -39,8 +40,10 @@ const AddOneForm = () => {
           className="border border-gray-300 p-2"
           required
         />
-        <button type="submit" className="bg-blue-500 text-black p-2 rounded hover:bg-blue-700 transition duration-150">
-          Add One
+        <div className='h-[10px]'></div>
+        <button type="submit" className="bg-indigo-500/30 text-white p-2 rounded hover:bg-indigo-700/30 border
+         border-indigo-500/40 transition duration-150">
+          Multiply
         </button>
       </form>
       {result !== null && (
@@ -67,9 +70,13 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between p-24 text-slate-200">
+
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
         {/* Display API response */}
+        <div className='text-2xl py-10'>
+          Test backend functionality
+        </div>
         <div>
           <p>Status: {apiResponse.status}</p>
           <p>Message: {apiResponse.message}</p>

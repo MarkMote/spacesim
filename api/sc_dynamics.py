@@ -1,7 +1,5 @@
 import control as ct
-from ahrs import Quaternion
 import numpy as np
-import matplotlib.pyplot as plt
 
 
 def quaternion_inverse(q):
