@@ -1,7 +1,11 @@
 'use client';
 import React, { useState, useEffect, useRef } from 'react';
 import * as THREE from 'three';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+// import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+// declare module 'three/examples/jsm/controls/OrbitControls' {
+//   export * from 'three/examples/jsm/controls/OrbitControls';
+// }
+
 
 type SimulationData = {
   quaternion: [number, number, number, number],
@@ -60,10 +64,10 @@ export default function Home() {
     directionalLight.position.set(0, 1, 0);
     scene.add(directionalLight);
 
-    const controls = new OrbitControls(camera, renderer.domElement);
-    controls.enableDamping = false;
-    controls.dampingFactor = 0.025;
-    controls.enableZoom = true;
+    // const controls = new OrbitControls(camera, renderer.domElement);
+    // controls.enableDamping = false;
+    // controls.dampingFactor = 0.025;
+    // controls.enableZoom = true;
 
     const geometry = new THREE.BoxGeometry();
     const material = new THREE.MeshNormalMaterial(
