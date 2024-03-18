@@ -1,4 +1,4 @@
-#!/home/mark/Dropbox/PROJECTS/nextjs-fastapi/venv/bin/python3
+#!/home/mark/Dropbox/PROJECTS/nextJs_with_python/venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys

@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/mark/Dropbox/PROJECTS/nextjs-fastapi/venv"
+VIRTUAL_ENV="/home/mark/Dropbox/PROJECTS/nextJs_with_python/next-python/venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
