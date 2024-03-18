@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-# import numpy as np
+import numpy as np
 
 # from api.run_simulation import run_simulation
 
@@ -20,9 +20,9 @@ def healthchecker():
 #     return {"result": number + 1}
 
 
-# @app.get("/api/multiply/{number_1}/{number_2}")
-# def multiply(number_1: int, number_2: int):
-#     return {"result": number_1 * number_2}
+@app.get("/api/multiply/{number_1}/{number_2}")
+def multiply(number_1: int, number_2: int):
+    return {"result": number_1 * number_2}
 
 
 # @app.get("/api/simulate")
